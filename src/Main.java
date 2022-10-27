@@ -8,6 +8,7 @@ public class Main {
         dev.setReason("Вылет за границу");
         dev.goToDayOff();
         dev.print();
+    //    dev.goToVacation();
         System.out.println("--------------------------------------");
         Developer dev2 = new Developer();
         dev2.setName("Иван");
@@ -17,6 +18,7 @@ public class Main {
         dev2.setReason("Свадьба друга");
         dev2.goToDayOff();
         dev2.print();
+    //    dev2.goToVacation();
         System.out.println("--------------------------------------");
         Developer dev3 = new Developer();
         dev3.setName("Борис");
@@ -26,6 +28,7 @@ public class Main {
         dev3.setReason("Нужно домой");
         dev3.goToDayOff();
         dev3.print();
+    //    dev3.goToVacation();
         System.out.println("--------------------------------------");
         Developer dev4 = new Developer();
         dev4.setName("Ахмеджан");
@@ -33,20 +36,24 @@ public class Main {
         dev4.setSalary(10000);
         dev4.setGrade("Intern");
         dev4.setReason("Экзамен в унике");
-        dev4.goToDayOff();
+        dev4.goToVacation();
         dev4.print();
+    //    dev4.goToDayOff();
         System.out.println("--------------------------------------");
         Specialist spec1 = new Specialist("Талгат", 25, 59999, 25, "Эмоциональное выгорание");
         spec1.print();
         spec1.goToDayOff();
+    //    spec1.goToVacation();
         System.out.println("--------------------------------------");
         Specialist spec2 = new Specialist("Талгарт", 35, 89000, 16, "Эмоциональное выгорание");
         spec2.print();
         spec2.goToDayOff();
+      //  spec2.goToVacation();
         System.out.println("--------------------------------------");
         Specialist spec3 = new Specialist("Талант", 59, 54000, 11, "Эмоциональное выгорание");
         spec3.print();
         spec3.goToDayOff();
+       // spec3.goToVacation();
         System.out.println("--------------------------------------");
         Manager man1 = new Manager();
         man1.setName("Бакыт");
@@ -56,6 +63,7 @@ public class Main {
         man1.setReason("Some reason");
         man1.print();
         man1.goToDayOff();
+       // man1.goToVacation();
         System.out.println("--------------------------------------");
         Manager man2 = new Manager();
         man2.setName("Нуралы");
@@ -65,6 +73,7 @@ public class Main {
         man2.setReason("Another reason");
         man2.print();
         man2.goToDayOff();
+      //  man2.goToVacation();
         System.out.println("--------------------------------------");
         Ceo ceo = new Ceo();
         ceo.setName("Асем");
@@ -75,7 +84,16 @@ public class Main {
         ceo.setReason("Работала без выходных 2 года");
         ceo.print();
         ceo.goToDayOff();
+        //ceo.goToVacation();
         System.out.println("--------------------------------------");
+
+        Employee[] empArr = {dev, dev2, dev3, dev4, spec1, spec2, spec3, man1, man2, ceo};
+        System.out.println("В честь дня рождения комании все сотрудники уходят в отпуск!");
+        for (int i = 0; i < empArr.length; i++){
+            empArr[i].goToVacation();
+        }
+//        Specialist[] specArr = {spec1, spec2, spec3};
+//        Manager[] manArr = {man1, man2};
 
 
 

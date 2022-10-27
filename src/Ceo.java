@@ -30,4 +30,5 @@ public class Ceo extends Manager{
     public void goToDayOff() {
         super.goToDayOff();
     }
+
 }

@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface EmployeeService {
+public interface EmployeeService {
+    void goToVacation();
 }

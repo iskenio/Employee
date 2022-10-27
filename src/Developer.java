@@ -34,4 +34,9 @@ public class Developer extends Employee{
     public void goToDayOff() {
         System.out.println("Причина отпуска: " + getReason());
     }
+
+    @Override
+    public void goToVacation() {
+        System.out.println("I'm " + getName() +" dev going home");
+    }
 }

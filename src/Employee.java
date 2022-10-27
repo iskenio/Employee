@@ -1,4 +1,4 @@
-public abstract class Employee {
+public abstract class Employee implements EmployeeService{
     private String name;
     private int age;
     private int salary;
